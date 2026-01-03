@@ -272,7 +272,7 @@ $
 (-oo, a) inter QQ = { x in QQ mid(|) x < a }
 $
 である。
-]
+] <t_real_cut>
 
 #proof[
 $B = { x in QQ mid(|) x < a }$が有理数の切断であることを示す。
