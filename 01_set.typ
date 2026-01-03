@@ -1,9 +1,9 @@
 
-= 集合と論理
+= 集合
 
 #import "deps/theorem.typ": theorem, lemma, proposition, definition, corollary, example, xca, remark, proof
 
-== 集合、命題、写像
+== 集合と命題と写像
 
 _集合_とはいくつかの「もの」の集まりであり、その集合に所属するかしないか判定できるものをいう（ことにする）。
 ここでいう集合に所属する「もの」のことを_元_または_要素_という。
