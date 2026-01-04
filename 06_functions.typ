@@ -1,5 +1,5 @@
 
-= 種々の関数１
+= 種々の関数
 
 #import "deps/theorem.typ": theorem, lemma, proposition, definition, corollary, example, xca, remark, proof
 
@@ -68,8 +68,8 @@ $
 そこで実数$b$に対して_べき_あるいは_実数べき_を正の実数$a$に対して
 $
 a^b = cases(
-  sup { a^x mid(|) x in QQ, x <= x } & (a >= 1),,
-  inf { a^x mid(|) x in QQ, x <= x } & (a <= 1),
+  sup { a^x mid(|) x in QQ, x <= b } & quad (a >= 1)",",
+  inf { a^x mid(|) x in QQ, x <= b } & quad (a <= 1),
 )
 $
 と定義する。
@@ -147,12 +147,14 @@ $
 ネイピア数$e$を底とする指数関数$exp_e x = e^x$を単に$exp$で表す。
 
 #proposition[
+ネイピア数について極限の式
 $
 lim_(x -> +oo) (1+1/x)^x
 = lim_(x -> -oo) (1+1/x)^x
 = lim_(x -> 0) (1+x)^(1/x)
-= e.
+= e
 $
+が成り立つ。
 ] <t_limit_napier>
 
 #proof[
@@ -199,10 +201,12 @@ $a$を$a > 0$, $a eq.not 1$を満たす実数とする。
 ネイピア数$e$を底とする対数を_自然対数_といい、関数$log_e$を単に$log$で表す。
 
 #proposition[
+極限の式
 $
 lim_(x -> 0) (log(1+x))/x = 1,
-quad lim_(x -> 0) (e^x-1)/x = 1.
+quad lim_(x -> 0) (e^x-1)/x = 1
 $
+が成り立つ。
 ] <t_limit_logexp>
 
 #proof[
@@ -333,11 +337,11 @@ $lim_(y -> +oo) sinh y = +oo$より、$sinh y$の逆関数として_逆双曲線
 双曲線正接関数$tanh y$は$RR$上で狭義単調増加な連続関数で$lim_(y -> -oo) tan y = -1$, $lim_(y -> +oo) tanh y = +1$より、$tanh y$の逆関数として_逆双曲線正接関数_$artanh x$が$(-1, +1)$上の$RR$値の狭義単調増加な連続関数として得られる。
 これらの関数をまとめて_逆双曲線関数_という。
 
-上では逆双曲線関数を抽象的に定義したが、双曲線関数の表示にもとづいて$sinh y = (e^y-e^(-y))/2 = x$を$x$について解くことで、次の表示を得られる。
+上では逆双曲線関数を抽象的に定義したが、双曲線関数の表示にもとづいて$sinh y = (e^y-e^(-y))/2 = x$を$x$について解くことで、次の表示が得られる。
 $
 arsinh x = log(x+sqrt(x^2+1)),
-quad arcosh x = log(x+sqrt(x^2-1)) (x >= 1),
-quad artanh x = (1/2)log (1+x)/(1-x) (-1 < x < +1).
+quad arcosh x = log(x+sqrt(x^2-1)) quad (x >= 1), \
+artanh x = (1/2)log (1+x)/(1-x) quad (-1 < x < +1).
 $
 
 == その他の関数
