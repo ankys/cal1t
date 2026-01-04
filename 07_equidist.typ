@@ -131,9 +131,9 @@ $
 から従う。
 よって、
 $
-sum_(n <= N) {alpha n+beta}-sum_(n <= N) {alpha n+beta+a}
-&= sum_(n <= k) {alpha n+beta}+sum_(k < n <= N) {alpha n+beta}-sum_(n <= N-k) {alpha n+beta+a}-sum_(N-k < n <= N) {alpha n+beta+a} \
-&<= k+(N-k)epsilon.
+&sum_(n <= N) {alpha n+beta}-sum_(n <= N) {alpha n+beta+a} \
+&quad = sum_(n <= k) {alpha n+beta}+sum_(k < n <= N) {alpha n+beta}-sum_(n <= N-k) {alpha n+beta+a}-sum_(N-k < n <= N) {alpha n+beta+a} \
+&quad <= k+(N-k)epsilon.
 $
 したがって、
 $
@@ -180,7 +180,7 @@ $
 ここから$(x_n)$は$(y_n)$と同様に一様分布することがわかる。
 ]
 
-また、一様分布の内容から次の拡張が得られる。
+また、本テキストでは扱わないが積分を用いれば、一様分布の内容から次の拡張が得られる。
 
 #proposition[
 $f$を$\[0, 1\)$上の有界な実数値関数で$f(1) = f(0)$と拡張したときに$f$は$[0, 1]$上（リーマン）積分可能とする。
@@ -196,8 +196,8 @@ $ <e_equidist2>
 $
 f(x) = chi_(\[a, b\)) (x)
 = cases(
-  1 & (x in \[ a, b) \),
-  0 & (x in.not \[ a, b) \),
+  1 & quad (x in \[a, b\))",",
+  0 & quad (x in.not \[a, b\)),
 )
 $
 の場合に@e_equidist2 が成り立つということである。
@@ -281,8 +281,8 @@ $
 として考えると、この値は一様分布定理より
 $
 lim_(N -> oo) 1/N \#{ n <= N mid(|) a_n = d }
-= lim_(N -> oo) 1/N \#{ n <= N mid(|) log_10 d <= {n log_10 2} < log_10 (d+1) }
-= log_10 (d+1)-log_10 d
+&= lim_(N -> oo) 1/N \#{ n <= N mid(|) log_10 d <= {n log_10 2} < log_10 (d+1) } \
+&= log_10 (d+1)-log_10 d
 $
 となることがわかる。
 また、$a_n$の期待値に相当する
