@@ -4,18 +4,11 @@
 // #let date = datetime.today()
 #let date = [2026年1月5日]
 
-#import "@preview/js:0.1.3": *
-#show: js.with(
+#import "deps/jsbook.typ": *
+#show: jsbook.with(
 	paper: "a4",
-	book: true,
 	lang: "ja",
-	// seriffont: "New Computer Modern",
-	// seriffont-cjk: "Harano Aji Mincho",
-	// sansfont: "Source Sans Pro",
-	// sansfont-cjk: "Harano Aji Gothic",
 )
-#set par(first-line-indent: 1em) // why
-#show math.equation.where(block: true): block.with(width: 100%)
 
 #import "@preview/ctheorems:1.1.3": thmrules
 #show: thmrules.with()
