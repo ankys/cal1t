@@ -24,9 +24,11 @@
 })
 
 // #import "deps/outputtools.typ": *
+// #output_outline()
 // #output_outline(fmt: (level, number, body) => [#("  " * (level - 1))- #number #body\\n])
 // #pagebreak()
-// #output_labels(fmt: (key, value) => [  #key: \@r_cal1t\[#value\],\\n])
+// #output_labels()
+// #output_labels(fmt: (key, value) => [  #key: \@\[#value\],\\n])
 // #pagebreak()
 
 #maketitle(

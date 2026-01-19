@@ -22,7 +22,6 @@
 		let body = h.body
 		let n = h.numbering
 		let loc = h.location()
-		return h.numbering
 		let number = if n == none { "" } else {
 			numbering(n, ..counter(heading).at(loc))
 		}
